@@ -162,6 +162,81 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/16/CISCN2021/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="xiaoshen">
+      <meta itemprop="description" content="选择有时候比努力更重要">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xiaoshen">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/16/CISCN2021/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-06-16 16:41:01" itemprop="dateCreated datePublished" datetime="2021-06-16T16:41:01+08:00">2021-06-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-20 20:09:43" itemprop="dateModified" datetime="2021-06-20T20:09:43+08:00">2021-06-20</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="CISCN2021-AWD-华东北赛区"><a href="#CISCN2021-AWD-华东北赛区" class="headerlink" title="CISCN2021-AWD (华东北赛区)"></a>CISCN2021-AWD (华东北赛区)</h1><p>大二了第一次参加AWD比赛，说实话有点紧张，毕竟从来没有过AWD经验。一周时间速成，网上的教程少之又少，把所有的指令记到txt里，下了一堆工具和pdf（线下赛断网…），觉得自己稳了。（实则被师傅们打爆了，555）</p>
+<p>这次比赛没有时间维护，拿到账号密码就开始打了，我主要负责备份充当工具人hhh。首先是备份源码，SCP指令一定要记好，在dump源码研究了半天，在下载的rsa秘钥文件夹打开cmd，然后dump，端口默认22</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -r -i id_rsa username@ip:/home/xctf/challenge locall_file</span><br></pre></td></tr></table></figure>
+
+<p>scp指令：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -r -P Port remote_username@remote_ip:remote_folder local_folder</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-safecms"><a href="#1-safecms" class="headerlink" title="1. safecms"></a>1. safecms</h2><p>先拿D盾扫一扫，扫出一个eval后门，告诉队内师傅，好了任务完成。</p>
+<h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><p>pwn题真的不会。。。IDA看了半天，最后还是看着别的队师傅们的流量抄作业，打回去的，翻流量都能翻半天（都是混淆包，从最开始的几百kb，后面基本都是几M几十M了  我惊了）。</p>
+<p>然后pwn看着看着，前两题被日穿了，数据库被删了，网站进不去了，一直check不过，重置了也一会就check down了，估计被上了马儿了，只能一直掉分。值得庆幸的是secgame一直没被打，不知道是环境问题还是啥（反向上分hhh）。</p>
+<p>一年速成pwn！！！没有pwn手真的很难。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/16/hexo-one-article/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -353,7 +428,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
